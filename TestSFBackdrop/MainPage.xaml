@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<backdrop:SfBackdropPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+             mc:Ignorable="d"
+             BackLayerRevealOption="Auto"   
+             x:Class="TestSFBackdrop.MainPage">
+
+    <backdrop:SfBackdropPage.BackLayer>
+        <backdrop:BackdropBackLayer>
+            <ScrollView>
+                <StackLayout  Padding="10,10,10,10">
+                    <Label VerticalOptions="Center" Text="Back Layer Content "/>
+                </StackLayout>
+            </ScrollView>
+        </backdrop:BackdropBackLayer>
+    </backdrop:SfBackdropPage.BackLayer>
+
+    <backdrop:SfBackdropPage.FrontLayer>
+        <backdrop:BackdropFrontLayer BackgroundColor="#CDCDC0">
+            <StackLayout Orientation="Vertical" Margin="10,10,10,50" VerticalOptions="FillAndExpand">
+                <Label VerticalOptions="Center" Text="Type more into Front Layer Content "/>
+            </StackLayout>
+        </backdrop:BackdropFrontLayer>
+    </backdrop:SfBackdropPage.FrontLayer>
+
+</backdrop:SfBackdropPage>
